@@ -19,6 +19,7 @@ module.exports = async ({ deployments }) => {
     const simpleCoin = await SimpleCoin.deploy()
     await simpleCoin.deployed()
     console.log("SimpleCoin deployed to:", simpleCoin.address)
+    //fvm
 
     //deploy FilecoinMarketConsumer
     const FilecoinMarketConsumer = await ethers.getContractFactory("FilecoinMarketConsumer", wallet)
